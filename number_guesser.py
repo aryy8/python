@@ -31,4 +31,4 @@ def comp_guess(x):
         else:
          print("Invalid input. Please enter 'H', 'L', or 'C'.")
     print(f"yayyy comp guessed {guess} rightttt!!!!!")     
-comp_guess(20)       
+comp_guess(33)       
