@@ -1,16 +1,19 @@
 import random 
 
 def play():
-    user=input("shoot rock(r) or paper(p) or scissor(s)")
+    user=input("shoot rock(r) or paper(p) or scissor(s):")
     comp=random.choice(['r','p','s'])
+    print(f"comp chose {comp}")
     if user==comp:
         return 'its a tieeeeee'
-    if win(user,comp):
+    if is_win(user,comp):
         return 'you wonnnnn'
-    if win(comp,user):
-        return 'you lostttt'
+    return 'you lostttt'
     
 
-def win(user, comp):
+def is_win(user, comp):
     if(user=='r' and comp=='s') or (user=='s' and comp=='p') or (user=='p' and comp=='r'):
         return True
+    
+print(play())    
+
